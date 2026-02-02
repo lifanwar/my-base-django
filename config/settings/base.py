@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from django.utils.translation import gettext_lazy as _
 
 # Build paths - penting untuk struktur 3 level
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -26,6 +27,7 @@ TAILWIND_APP_NAME = 'theme'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -62,10 +64,23 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'Africa/Cairo'
+LANGUAGE_CODE = 'en'  # Default language
+
+# Supported languages
+LANGUAGES = [
+    ('en', _('English')),
+    ('id', _('Indonesia')),
+]
+
 USE_I18N = True
+USE_L10N = True
 USE_TZ = True
+TIME_ZONE = 'Africa/Cairo'
+
+# Locale paths (tempat .po files disimpan)
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
