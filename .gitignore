@@ -1,0 +1,8 @@
+prototype/
+venv/
+.env
+
+db.sqlite3
+
+# python
+__pycache__

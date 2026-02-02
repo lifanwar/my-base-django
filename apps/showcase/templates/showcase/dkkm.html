@@ -1,0 +1,753 @@
+{% extends 'showcase/base.html' %} {% block title %}DKM Real Estate Platform |
+Mualiful Anwar{% endblock %} {% block content %}
+<!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-b from-[#fefce8] to-yellow-100 py-16 md:py-20"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Project Number Badge -->
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="bg-gray-900 text-white font-black text-3xl w-16 h-16 flex items-center justify-center rotate-[-8deg] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            03
+          </div>
+          <div
+            class="h-1 flex-1 bg-gray-900 max-w-xs transform -skew-x-6"
+          ></div>
+        </div>
+
+        <!-- Project Title -->
+        <h1
+          class="text-5xl md:text-7xl font-black uppercase mb-6 leading-tight"
+        >
+          DKM Real Estate Platform
+        </h1>
+
+        <!-- Project Subtitle -->
+        <p class="text-2xl md:text-3xl text-gray-800 mb-8 max-w-3xl">
+          Automated Blacklist Alert System & Admin Dashboard for Indonesian
+          Students in Egypt
+        </p>
+
+        <!-- Tech Stack Badges -->
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span
+            class="border-2 border-gray-900 bg-orange-200 px-4 py-2 font-bold text-sm uppercase transform -rotate-2"
+            >Python</span
+          >
+          <span
+            class="border-2 border-gray-900 bg-yellow-200 px-4 py-2 font-bold text-sm uppercase transform rotate-1"
+            >Django</span
+          >
+          <span
+            class="border-2 border-gray-900 bg-cyan-200 px-4 py-2 font-bold text-sm uppercase transform -rotate-1"
+            >Telegram Bot API</span
+          >
+          <span
+            class="border-2 border-gray-900 bg-green-200 px-4 py-2 font-bold text-sm uppercase transform rotate-2"
+            >JavaScript</span
+          >
+          <span
+            class="border-2 border-gray-900 bg-purple-200 px-4 py-2 font-bold text-sm uppercase transform -rotate-2"
+            >PostgreSQL</span
+          >
+          <span
+            class="border-2 border-gray-900 bg-pink-200 px-4 py-2 font-bold text-sm uppercase transform rotate-1"
+            >Leaflet.js</span
+          >
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#overview"
+            class="inline-block bg-cyan-500 text-white px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-gray-900 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+          >
+            📖 Read Case Study
+          </a>
+          <a
+            href="index.html#contact"
+            class="inline-block bg-white text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-yellow-100 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+          >
+            💬 Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Image/Screenshot Section -->
+    <section class="bg-white py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="relative">
+          <!-- Main Screenshot Frame -->
+          <div
+            class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-2xl"
+            >
+              <img
+                src="/static/img/showcase/dkkm/dashboard-admin-page-gedung.png"
+                alt="Project screenshot showing administrator CRUD"
+                loading="lazy"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+
+          <!-- Decorative Tape -->
+          <div
+            class="absolute -top-3 right-12 w-24 h-10 bg-cyan-200 border-2 border-gray-900 opacity-80 transform -rotate-12"
+          ></div>
+          <div
+            class="absolute -bottom-3 left-12 w-24 h-10 bg-cyan-200 border-2 border-gray-900 opacity-80 transform rotate-6"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="bg-[#fefce8] py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-12">
+          <!-- Left Column - Project Info -->
+          <div class="md:col-span-1">
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">
+              Project Info
+            </h2>
+
+            <div class="space-y-6">
+              <!-- Timeline -->
+              <div
+                class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              >
+                <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+                  Timeline
+                </h3>
+                <p class="font-bold text-lg">2026 - 2027</p>
+              </div>
+
+              <!-- Role -->
+              <div
+                class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              >
+                <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+                  Role
+                </h3>
+                <p class="font-bold text-lg">
+                  Full Stack Developer & Bot Engineer
+                </p>
+              </div>
+
+              <!-- Client -->
+              <div
+                class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              >
+                <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+                  Client
+                </h3>
+                <p class="font-bold text-lg">DKKM PPMI Egypt</p>
+              </div>
+
+              <!-- Status -->
+              <div
+                class="border-4 border-gray-900 bg-lightgreen p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              >
+                <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+                  Status
+                </h3>
+                <p class="font-bold text-lg">✅ Live & Active</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Description -->
+          <div class="md:col-span-2">
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">
+              Overview
+            </h2>
+
+            <div class="space-y-6 text-lg leading-relaxed">
+              <p class="text-gray-700">
+                DKM Real Estate Platform is a comprehensive automation solution
+                designed to help Indonesian students in Egypt identify
+                blacklisted properties quickly and efficiently. The system
+                consists of a Telegram bot for instant property alerts and an
+                admin dashboard for centralized data management.
+              </p>
+
+              <p class="text-gray-700">
+                Previously, blacklist information was scattered across WhatsApp
+                channels and Instagram story highlights, making it difficult for
+                students to access current data. Outdated listings remained
+                visible, and properties that had been cleared were still marked
+                as problematic. This platform centralizes all information with
+                real-time updates, location-based search via Telegram bot, and
+                comprehensive Django Admin dashboard with Leaflet map
+                integration.
+              </p>
+
+              <div
+                class="border-l-4 border-cyan-500 pl-6 py-2 bg-cyan-50 border-4 border-gray-900 p-6 my-8"
+              >
+                <p class="font-bold text-xl text-gray-900 italic">
+                  "Transforming fragmented housing warnings into an automated,
+                  location-based alert system with centralized management."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="bg-white py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black uppercase mb-12 text-center">
+          The Challenge
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Challenge 1 -->
+          <div
+            class="border-4 border-gray-900 bg-red-50 p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-red-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">📱</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">Fragmented Data</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              Property blacklist information was scattered across WhatsApp
+              channels and Instagram story highlights, requiring students to
+              manually check multiple sources regularly to stay updated.
+            </p>
+          </div>
+
+          <!-- Challenge 2 -->
+          <div
+            class="border-4 border-gray-900 bg-red-50 p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-red-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">⚠️</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">Outdated Records</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              Properties cleared from blacklist remained in old posts, while
+              newly problematic units weren't quickly documented, causing
+              confusion and misinformation among students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="bg-yellow-100 py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+          The Solution
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Solution 1 -->
+          <div
+            class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-cyan-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">🤖</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">Telegram Bot Alert</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Students can share their location via Telegram to instantly
+              receive information about nearby blacklisted properties, complete
+              with building details, unit numbers, owner info, and blacklist
+              reasons.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-cyan-100 px-2 py-1 font-mono"
+                >Location Sharing</span
+              >
+              <span class="text-xs bg-cyan-100 px-2 py-1 font-mono"
+                >Instant Alerts</span
+              >
+              <span class="text-xs bg-cyan-100 px-2 py-1 font-mono"
+                >Proximity Search</span
+              >
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div
+            class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">🗺️</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">
+                Leaflet-Integrated Dashboard
+              </h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Django Admin dashboard with Leaflet.js map integration allows DKKM
+              staff to create, edit, and manage buildings and units with precise
+              location mapping using OpenStreetMap for accurate proximity
+              searches.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+                >Leaflet Maps</span
+              >
+              <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+                >Django Admin</span
+              >
+              <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+                >Location Pins</span
+              >
+            </div>
+          </div>
+
+          <!-- Solution 3 -->
+          <div
+            class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-green-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">🔄</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">Real-Time Sync</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Centralized PostgreSQL database ensures both bot and dashboard
+              access the same up-to-date information, eliminating discrepancies
+              and outdated blacklist data.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+                >Live Database</span
+              >
+              <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+                >Auto Updates</span
+              >
+              <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+                >Data Consistency</span
+              >
+            </div>
+          </div>
+
+          <!-- Solution 4 -->
+          <div
+            class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-2xl">📊</span>
+              </div>
+              <h3 class="text-xl font-black uppercase">
+                Comprehensive Management
+              </h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Admin interface allows complete control over buildings, units, and
+              blacklist status with detailed forms, search filters, and batch
+              operations for efficient data management.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+                >Full CRUD</span
+              >
+              <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+                >Search & Filter</span
+              >
+              <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+                >Batch Updates</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+          Key Features
+        </h2>
+
+        <div class="space-y-12">
+          <!-- Feature 1 -->
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[-5deg]"
+                >
+                  01
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black uppercase">
+                  Location-Based Bot Search
+                </h3>
+              </div>
+              <div class="h-1 w-32 bg-cyan-500 mb-6"></div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Students share their location in Telegram to instantly discover
+                nearby buildings with blacklisted units, sorted by proximity
+                with complete property details.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-cyan-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">GPS coordinate detection</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-blue-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Radius-based property search</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-purple-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">Building and unit details</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-green-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Owner info and blacklist reasons</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+            >
+              <div
+                class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+              >
+                <img
+                  src="/static/img/showcase/dkkm/dkm-bot-preview-tele.png"
+                  alt="Project screenshot showing bot shareloc implementation"
+                  loading="lazy"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div
+              class="order-2 md:order-1 border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+            >
+              <div
+                class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+              >
+                <img
+                  src="/static/img/showcase/dkkm/leaflet.png"
+                  alt="Project screenshot showing dashboard leaflet integration"
+                  loading="lazy"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="order-1 md:order-2">
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[5deg]"
+                >
+                  02
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black uppercase">
+                  Django Admin with Leaflet Maps
+                </h3>
+              </div>
+              <div class="h-1 w-32 bg-blue-500 mb-6"></div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Comprehensive Django Admin interface with Leaflet.js integration
+                for managing buildings, units, and blacklist status with precise
+                location mapping and visual property management on
+                OpenStreetMap.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-red-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Interactive Leaflet map interface</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-orange-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Create/edit buildings & units</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-yellow-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Pin locations on OpenStreetMap</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-pink-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">Manage blacklist status</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[-5deg]"
+                >
+                  03
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black uppercase">
+                  Real-Time Data Management
+                </h3>
+              </div>
+              <div class="h-1 w-32 bg-green-500 mb-6"></div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Centralized database ensures instant synchronization between bot
+                and dashboard, with automatic updates when properties are added,
+                modified, or removed from blacklist.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-teal-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700"
+                    >Live database synchronization</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-lime-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">Instant bot updates</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-amber-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">Status change tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="inline-block w-5 h-5 bg-indigo-500 rounded-sm flex-shrink-0 mt-1"
+                  ></span>
+                  <span class="text-gray-700">Audit log for changes</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+            >
+              <div
+                class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+              >
+                <img
+                  src="/static/img/showcase/dkkm/dashboard-admin-realtime-data.png"
+                  alt="Project screenshot showing dashboard realtime data"
+                  loading="lazy"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Deep Dive -->
+    <section class="bg-[#fefce8] py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+          Technology Stack
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Backend -->
+          <div
+            class="border-4 border-gray-900 bg-orange-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="w-12 h-12 bg-orange-500 rounded flex items-center justify-center mb-4"
+            >
+              <span class="text-2xl">🐍</span>
+            </div>
+            <h3 class="font-black uppercase text-xl mb-3">Backend</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Python 3.11</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Django 6.0</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Django Admin</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>python-telegram-bot</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>PostgreSQL</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Frontend -->
+          <div
+            class="border-4 border-gray-900 bg-green-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="w-12 h-12 bg-green-500 rounded flex items-center justify-center mb-4"
+            >
+              <span class="text-2xl">💻</span>
+            </div>
+            <h3 class="font-black uppercase text-xl mb-3">Frontend</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>JavaScript ES6+</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>HTML5 & CSS3</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Django Templates</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Maps & APIs -->
+          <div
+            class="border-4 border-gray-900 bg-cyan-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="w-12 h-12 bg-cyan-500 rounded flex items-center justify-center mb-4"
+            >
+              <span class="text-2xl">🗺️</span>
+            </div>
+            <h3 class="font-black uppercase text-xl mb-3">Maps & APIs</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Leaflet.js</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>OpenStreetMap</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Telegram Bot API</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Geolocation API</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div
+            class="border-4 border-gray-900 bg-purple-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center mb-4"
+            >
+              <span class="text-2xl">🚀</span>
+            </div>
+            <h3 class="font-black uppercase text-xl mb-3">DevOps</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Docker</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Ubuntu Server</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+                <span>Git & GitHub</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-900 text-white py-16 md:py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">
+          Interested in working together?
+        </h2>
+        <p class="text-xl mb-8 text-gray-300">
+          Let's keep in touch and discuss your next project
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a
+            href="{% url "home" %}#contact"
+            class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-white transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+          >
+            💬 Get in Touch
+          </a>
+          <a
+            href="index.html#projects"
+            class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+          >
+            ← More Projects
+          </a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

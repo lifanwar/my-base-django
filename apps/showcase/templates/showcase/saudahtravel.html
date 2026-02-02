@@ -1,0 +1,716 @@
+{% extends 'showcase/base.html' %} {% block title %}Saudahtravel Agency |
+Mualiful Anwar{% endblock %} {% block content %}
+
+<!-- Hero Section -->
+<section
+  class="relative bg-gradient-to-b from-[#fefce8] to-yellow-100 py-16 md:py-20"
+>
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Project Number Badge -->
+    <div class="flex items-center gap-4 mb-6">
+      <div
+        class="bg-gray-900 text-white font-black text-3xl w-16 h-16 flex items-center justify-center rotate-[-5deg] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+      >
+        01
+      </div>
+      <div class="h-1 flex-1 bg-gray-900 max-w-xs transform -skew-x-12"></div>
+    </div>
+
+    <!-- Project Title -->
+    <h1 class="text-5xl md:text-7xl font-black uppercase mb-6 leading-tight">
+      Saudah Travel
+    </h1>
+
+    <!-- Project Subtitle -->
+    <p class="text-2xl md:text-3xl text-gray-800 mb-8 max-w-3xl">
+      Dynamic Travel Agency Platform for Hajj, Umrah & Tour Packages
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-8">
+      <span
+        class="border-2 border-gray-900 bg-orange-200 px-4 py-2 font-bold text-sm uppercase transform -rotate-1"
+        >Python</span
+      >
+      <span
+        class="border-2 border-gray-900 bg-yellow-200 px-4 py-2 font-bold text-sm uppercase transform rotate-1"
+        >Django</span
+      >
+      <span
+        class="border-2 border-gray-900 bg-green-200 px-4 py-2 font-bold text-sm uppercase transform -rotate-2"
+        >Alpine.js</span
+      >
+      <span
+        class="border-2 border-gray-900 bg-blue-200 px-4 py-2 font-bold text-sm uppercase transform rotate-2"
+        >Tailwind CSS</span
+      >
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap gap-4">
+      <a
+        href="https://saudahtravel.id"
+        target="_blank"
+        class="inline-block bg-blue-500 text-white px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-gray-900 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      >
+        🌐 Visit Live Site
+      </a>
+      <a
+        href="#overview"
+        class="inline-block bg-white text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-yellow-100 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      >
+        📖 Read Case Study
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Project Image/Screenshot Section -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="relative">
+      <!-- Main Screenshot Frame -->
+      <div
+        class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div
+          class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-2xl"
+        >
+          <img
+            src="/static/img/showcase/saudahtravel/beranda-hero-sec.png"
+            alt="Project screenshot showing main features"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Decorative Tape -->
+      <div
+        class="absolute -top-3 right-12 w-24 h-10 bg-yellow-200 border-2 border-gray-900 opacity-80 transform -rotate-12"
+      ></div>
+      <div
+        class="absolute -bottom-3 left-12 w-24 h-10 bg-yellow-200 border-2 border-gray-900 opacity-80 transform rotate-6"
+      ></div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview Section -->
+<section id="overview" class="bg-[#fefce8] py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12">
+      <!-- Left Column - Project Info -->
+      <div class="md:col-span-1">
+        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">
+          Project Info
+        </h2>
+
+        <div class="space-y-6">
+          <!-- Timeline -->
+          <div
+            class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+              Timeline
+            </h3>
+            <p class="font-bold text-lg">2025 - Present</p>
+          </div>
+
+          <!-- Role -->
+          <div
+            class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+              Role
+            </h3>
+            <p class="font-bold text-lg">Full Stack Developer</p>
+          </div>
+
+          <!-- Client -->
+          <div
+            class="border-4 border-gray-900 bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+              Client
+            </h3>
+            <p class="font-bold text-lg">Saudah Travel</p>
+          </div>
+
+          <!-- Status -->
+          <div
+            class="border-4 border-gray-900 bg-lightgreen p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <h3 class="font-black uppercase text-sm mb-2 text-gray-600">
+              Status
+            </h3>
+            <p class="font-bold text-lg">✅ Live & Active</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Description -->
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">Overview</h2>
+
+        <div class="space-y-6 text-lg leading-relaxed">
+          <p class="text-gray-700">
+            Saudah Travel is a comprehensive web platform designed for a travel
+            agency specializing in Islamic pilgrimage services (Hajj and Umrah)
+            as well as general tour packages. The platform provides a dynamic
+            content management system that empowers the admin team to manage
+            travel packages efficiently.
+          </p>
+
+          <p class="text-gray-700">
+            Built with modern web technologies, the platform features a fully
+            responsive design and an intuitive admin dashboard. Administrators
+            can create, edit, and delete travel packages in real-time without
+            requiring technical expertise, making content management seamless
+            and efficient.
+          </p>
+
+          <div
+            class="border-l-4 border-blue-500 pl-6 py-2 bg-blue-50 border-4 border-gray-900 p-6 my-8"
+          >
+            <p class="font-bold text-xl text-gray-900 italic">
+              "The goal was to create a platform that is both powerful for
+              admins and intuitive for customers browsing travel packages."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black uppercase mb-12 text-center">
+      The Challenge
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Challenge 1 -->
+      <div
+        class="border-4 border-gray-900 bg-red-50 p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-red-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">❌</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Static Content</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          Previous website required developer intervention for every content
+          update, causing delays and increasing maintenance costs.
+        </p>
+      </div>
+
+      <!-- Challenge 2 -->
+      <div
+        class="border-4 border-gray-900 bg-red-50 p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-red-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">⏱️</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Slow Updates</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          Travel packages needed frequent price and availability updates, but
+          the manual process was time-consuming and error-prone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solution Section -->
+<section class="bg-yellow-100 py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+      The Solution
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Solution 1 -->
+      <div
+        class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">⚡</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Dynamic CMS</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Built a comprehensive admin dashboard where non-technical staff can
+          manage all travel packages, including creating, editing, deleting, and
+          publishing content instantly.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+            >Django Admin</span
+          >
+          <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+            >WYSIWYG Editor</span
+          >
+          <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
+            >Image Upload</span
+          >
+        </div>
+      </div>
+
+      <!-- Solution 2 -->
+      <div
+        class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-green-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">📱</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Mobile-First Design</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Implemented fully responsive design using Tailwind CSS, ensuring
+          perfect user experience across all devices from mobile phones to
+          desktop screens.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+            >Responsive Grid</span
+          >
+          <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+            >Touch Optimized</span
+          >
+          <span class="text-xs bg-green-100 px-2 py-1 font-mono"
+            >Fast Loading</span
+          >
+        </div>
+      </div>
+
+      <!-- Solution 3 -->
+      <div
+        class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">✨</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Interactive UI</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Enhanced user experience with smooth animations and interactive
+          components using Alpine.js, making the browsing experience more
+          engaging without heavy JavaScript frameworks.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+            >Smooth Transitions</span
+          >
+          <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+            >Dropdown Menus</span
+          >
+          <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
+            >Modal Windows</span
+          >
+        </div>
+      </div>
+
+      <!-- Solution 4 -->
+      <div
+        class="border-4 border-gray-900 bg-white p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div class="flex items-center gap-4 mb-4">
+          <div
+            class="w-12 h-12 bg-orange-500 rounded flex items-center justify-center flex-shrink-0"
+          >
+            <span class="text-2xl">🎨</span>
+          </div>
+          <h3 class="text-xl font-black uppercase">Modern UI/UX</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Designed clean, professional interface that builds trust with
+          potential customers while maintaining easy navigation and clear
+          call-to-actions.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
+            >Clean Layout</span
+          >
+          <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
+            >Clear CTAs</span
+          >
+          <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
+            >Trust Signals</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+      Key Features
+    </h2>
+
+    <div class="space-y-12">
+      <!-- Feature 1 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div
+              class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[-5deg]"
+            >
+              01
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black uppercase">
+              Package Management
+            </h3>
+          </div>
+          <div class="h-1 w-32 bg-blue-500 mb-6"></div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            Comprehensive CRUD operations for travel packages with rich text
+            editing, image galleries, pricing tiers, and availability tracking.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-blue-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700"
+                >Create unlimited package variations</span
+              >
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-green-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700"
+                >Upload multiple images per package</span
+              >
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-purple-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Set different pricing options</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-orange-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Manage availability and dates</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+        >
+          <div
+            class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+          >
+            <img
+              src="/static/img/showcase/saudahtravel/django-admin-package.png"
+              alt="Project screenshot showing admin CRUD"
+              loading="lazy"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div
+          class="order-2 md:order-1 border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+        >
+          <div
+            class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+          >
+            <img
+              src="/static/img/showcase/saudahtravel/package display-frontend.png"
+              alt="Project screenshot showing frontend package display"
+              loading="lazy"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div
+              class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[5deg]"
+            >
+              02
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black uppercase">
+              User-Friendly Interface
+            </h3>
+          </div>
+          <div class="h-1 w-32 bg-green-500 mb-6"></div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            Intuitive navigation and clean design help customers easily find and
+            compare travel packages, with clear pricing and booking information.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-cyan-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Category filtering system</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-pink-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Search functionality</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-yellow-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Package comparison feature</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-indigo-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700"
+                >WhatsApp integration for inquiries</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div
+              class="bg-gray-900 text-white font-black text-xl w-10 h-10 flex items-center justify-center rotate-[-5deg]"
+            >
+              03
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black uppercase">
+              Performance Optimized
+            </h3>
+          </div>
+          <div class="h-1 w-32 bg-purple-500 mb-6"></div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            Built with performance in mind, ensuring fast page loads even with
+            rich media content and multiple package listings.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-red-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Optimized image loading</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-teal-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Efficient database queries</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-lime-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Cached static assets</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="inline-block w-5 h-5 bg-amber-500 rounded-sm flex-shrink-0 mt-1"
+              ></span>
+              <span class="text-gray-700">Lazy loading implementation</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-4 border-gray-900 bg-gray-100 p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+        >
+          <div
+            class="aspect-video bg-gray-300 flex items-center justify-center text-gray-600 font-bold"
+          >
+            <img
+              src="/static/img/showcase/saudahtravel/performance-test.png"
+              alt="Project screenshot showing performance"
+              loading="lazy"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack Deep Dive -->
+<section class="bg-[#fefce8] py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
+      Technology Stack
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Backend -->
+      <div
+        class="border-4 border-gray-900 bg-orange-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div
+          class="w-12 h-12 bg-orange-500 rounded flex items-center justify-center mb-4"
+        >
+          <span class="text-2xl">🐍</span>
+        </div>
+        <h3 class="font-black uppercase text-xl mb-3">Backend</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Python 3.11</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Django 6.0</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>PostgreSQL</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Frontend -->
+      <div
+        class="border-4 border-gray-900 bg-blue-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div
+          class="w-12 h-12 bg-blue-500 rounded flex items-center justify-center mb-4"
+        >
+          <span class="text-2xl">🎨</span>
+        </div>
+        <h3 class="font-black uppercase text-xl mb-3">Frontend</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Tailwind CSS 3.4</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Alpine.js 3.14</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>HTML5 & CSS3</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Responsive Design</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DevOps -->
+      <div
+        class="border-4 border-gray-900 bg-purple-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div
+          class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center mb-4"
+        >
+          <span class="text-2xl">🚀</span>
+        </div>
+        <h3 class="font-black uppercase text-xl mb-3">DevOps</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Docker</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Docker Compose</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Nginx</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Ubuntu Server</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div
+        class="border-4 border-gray-900 bg-green-100 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <div
+          class="w-12 h-12 bg-green-500 rounded flex items-center justify-center mb-4"
+        >
+          <span class="text-2xl">🛠️</span>
+        </div>
+        <h3 class="font-black uppercase text-xl mb-3">Tools</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>Git & GitHub</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-900 rounded-full"></span>
+            <span>VS Code</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gray-900 text-white py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">
+      Interested in working together?
+    </h2>
+    <p class="text-xl mb-8 text-gray-300">
+      Let's keep in touch and discuss your next project
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a
+        href="https://saudahtravel.id"
+        target="_blank"
+        class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-white transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      >
+        🌐 Visit Live Site
+      </a>
+      <a
+        href="{% url "home" %}#contact"
+        class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      >
+        💬 Get in Touch
+      </a>
+      <a
+        href="{% url "home" %}#projects"
+        class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      >
+        ← More Projects
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

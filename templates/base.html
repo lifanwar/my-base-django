@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      {% block title %}Mualiful Anwar | Full Stack Web Developer{% endblock %}
+    </title>
+
+    <!-- Local Fonts - Load dulu sebelum Tailwind -->
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Alpine.js CDN -->
+    <script defer src="{% static 'js/alpine.min.js' %}"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D0F75B",
+              cream: "#f5f1ed",
+              creamautumn: "#fefce8",
+              lightgreen: "#c8f5c4",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body class="bg-[#fefce8] text-gray-900 antialiased font-sans">
+    <!-- Header -->
+    {% include 'snippets/header.html' %}
+
+    <!-- Main Content -->
+    <main>{% block content %}{% endblock %}</main>
+
+    <!-- Footer -->
+    {% include 'snippets/footer.html' %} {% block extra_js %}{% endblock %}
+  </body>
+</html>
