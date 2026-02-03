@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 12:57+0200\n"
+"POT-Creation-Date: 2026-02-03 13:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgstr ""
 "Indonesia di Mesir"
 
 #: apps/showcase/templates/showcase/dkkm.html:70
+#: apps/showcase/templates/showcase/jastipin.html:62
 #: apps/showcase/templates/showcase/saudahtravel.html:65
 #, fuzzy
 #| msgid "View Case Study"
@@ -35,6 +36,7 @@ msgstr "Baca Studi Kasus"
 
 #: apps/showcase/templates/showcase/dkkm.html:76
 #: apps/showcase/templates/showcase/dkkm.html:712
+#: apps/showcase/templates/showcase/jastipin.html:676
 #: apps/showcase/templates/showcase/saudahtravel.html:686
 #, fuzzy
 #| msgid "Get in touch"
@@ -48,6 +50,7 @@ msgid "Project Info"
 msgstr "Info Proyek"
 
 #: apps/showcase/templates/showcase/dkkm.html:171
+#: apps/showcase/templates/showcase/jastipin.html:154
 #: apps/showcase/templates/showcase/saudahtravel.html:157
 msgid "Overview"
 msgstr "Gambaran Umum"
@@ -91,6 +94,7 @@ msgstr ""
 "berbasis lokasi dengan pengelolaan terpusat."
 
 #: apps/showcase/templates/showcase/dkkm.html:200
+#: apps/showcase/templates/showcase/jastipin.html:182
 #: apps/showcase/templates/showcase/saudahtravel.html:185
 msgid "The Challenge"
 msgstr "Tantangan"
@@ -125,6 +129,7 @@ msgstr ""
 "mahasiswa."
 
 #: apps/showcase/templates/showcase/dkkm.html:245
+#: apps/showcase/templates/showcase/jastipin.html:227
 #: apps/showcase/templates/showcase/saudahtravel.html:230
 msgid "The Solution"
 msgstr "Solusi"
@@ -216,6 +221,7 @@ msgid "Batch Updates"
 msgstr "Pembaruan Massal"
 
 #: apps/showcase/templates/showcase/dkkm.html:372
+#: apps/showcase/templates/showcase/jastipin.html:350
 #: apps/showcase/templates/showcase/saudahtravel.html:353
 msgid "Key Features"
 msgstr "Fitur Utama"
@@ -311,21 +317,274 @@ msgid "Audit log for changes"
 msgstr "Log audit untuk setiap perubahan"
 
 #: apps/showcase/templates/showcase/dkkm.html:702
+#: apps/showcase/templates/showcase/jastipin.html:666
 #: apps/showcase/templates/showcase/saudahtravel.html:669
 msgid "Interested in working together?"
 msgstr "Tertarik untuk bekerja sama?"
 
 #: apps/showcase/templates/showcase/dkkm.html:705
+#: apps/showcase/templates/showcase/jastipin.html:669
 #: apps/showcase/templates/showcase/saudahtravel.html:672
 msgid "Let's keep in touch and discuss your next project"
 msgstr "Mari tetap terhubung dan membahas proyek berikutnya"
 
 #: apps/showcase/templates/showcase/dkkm.html:718
+#: apps/showcase/templates/showcase/jastipin.html:682
 #: apps/showcase/templates/showcase/saudahtravel.html:692
 #, fuzzy
 #| msgid "Projects"
 msgid "More Projects"
 msgstr "Proyek Lainnya"
+
+#: apps/showcase/templates/showcase/jastipin.html:25
+#, fuzzy
+#| msgid ""
+#| "Built marketplace platform connecting jastip providers with customers"
+msgid ""
+"Jastip Marketplace Platform Connecting Travelers & Customers in Egypt and "
+"Indonesia"
+msgstr ""
+"Membangun platform marketplace yang menghubungkan penyedia jastip dengan "
+"pelanggan"
+
+#: apps/showcase/templates/showcase/jastipin.html:158
+msgid ""
+"Jastipin.id is a specialized marketplace platform designed to connect jastip "
+"providers (travelers who offer baggage delivery services) with customers in "
+"Egypt, particularly serving the Indonesian community. The platform addresses "
+"the common challenge of finding reliable jastip services in a fragmented, "
+"unorganized market."
+msgstr ""
+"Jastipin.id adalah platform lokapasar khusus yang dirancang untuk "
+"menghubungkan penyedia jastip (pelancong yang menawarkan layanan titip "
+"bagasi) dengan pelanggan di Mesir, khususnya untuk melayani komunitas "
+"Indonesia. Platform ini menjawab tantangan umum dalam menemukan layanan "
+"jastip tepercaya di pasar yang terfragmentasi dan tidak terorganisasi."
+
+#: apps/showcase/templates/showcase/jastipin.html:162
+msgid ""
+"The platform features a date-based baggage search system where customers can "
+"find available jastip providers based on their specific travel dates. Jastip "
+"providers can register their flight details and track engagement through an "
+"analytics dashboard, including WhatsApp click-through rates per flight."
+msgstr ""
+"Platform ini menampilkan sistem pencarian bagasi berbasis tanggal di mana "
+"pelanggan dapat menemukan penyedia jastip yang tersedia berdasarkan tanggal "
+"perjalanan tertentu. Penyedia jastip dapat mendaftarkan detail penerbangan "
+"mereka dan melacak interaksi melalui dasbor analitik, termasuk rasio klik-"
+"tayang WhatsApp per penerbangan."
+
+#: apps/showcase/templates/showcase/jastipin.html:169
+msgid ""
+"Connecting travelers and customers efficiently by organizing scattered "
+"jastip services into one centralized, date-based marketplace."
+msgstr ""
+"Menghubungkan pelancong dan pelanggan secara efisien dengan mengorganisasi "
+"layanan jastip yang tersebar ke dalam satu lokapasar terpusat berbasis "
+"tanggal."
+
+#: apps/showcase/templates/showcase/jastipin.html:196
+msgid "Fragmented Market"
+msgstr "Pasar yang Terfragmentasi"
+
+#: apps/showcase/templates/showcase/jastipin.html:199
+msgid ""
+"Jastip services were scattered across social media posts and group chats, "
+"making it extremely difficult for customers to find reliable providers when "
+"needed."
+msgstr ""
+"Layanan jastip tersebar di berbagai unggahan media sosial dan grup obrolan, "
+"sehingga sangat menyulitkan pelanggan untuk menemukan penyedia tepercaya "
+"saat dibutuhkan."
+
+#: apps/showcase/templates/showcase/jastipin.html:213
+msgid "Date Mismatch"
+msgstr "Ketidakcocokan Tanggal"
+
+#: apps/showcase/templates/showcase/jastipin.html:216
+msgid ""
+"Customers often found jastip advertisements that didn't match their urgent "
+"timeline, wasting time searching through outdated or irrelevant posts."
+msgstr ""
+"Pelanggan sering menemukan iklan jastip yang tidak sesuai dengan jadwal "
+"mendesak mereka, sehingga membuang waktu mencari di antara unggahan yang "
+"sudah kedaluwarsa atau tidak relevan."
+
+#: apps/showcase/templates/showcase/jastipin.html:241
+msgid "Date-Based Search"
+msgstr "Pencarian Berbasis Tanggal"
+
+#: apps/showcase/templates/showcase/jastipin.html:244
+msgid ""
+"Customers can filter available jastip services by specific travel dates, "
+"instantly finding providers whose schedules match their needs."
+msgstr ""
+"Pelanggan dapat memfilter layanan jastip yang tersedia berdasarkan tanggal "
+"perjalanan tertentu, dan secara instan menemukan penyedia yang jadwalnya "
+"sesuai dengan kebutuhan mereka."
+
+#: apps/showcase/templates/showcase/jastipin.html:248
+msgid "Calendar Filter"
+msgstr "Filter Kalender"
+
+#: apps/showcase/templates/showcase/jastipin.html:251
+msgid "Real-time Availability"
+msgstr "Ketersediaan Waktu Nyata"
+
+#: apps/showcase/templates/showcase/jastipin.html:254
+msgid "Smart Matching"
+msgstr "Pencocokan Cerdas"
+
+#: apps/showcase/templates/showcase/jastipin.html:269
+msgid "Flight Registration"
+msgstr "Pendaftaran Penerbangan"
+
+#: apps/showcase/templates/showcase/jastipin.html:272
+msgid ""
+"Jastip providers can register their flight details including departure "
+"dates, destinations, and available baggage capacity in a structured format."
+msgstr ""
+"Penyedia jastip dapat mendaftarkan detail penerbangan mereka termasuk "
+"tanggal keberangkatan, tujuan, dan kapasitas bagasi yang tersedia dalam "
+"format terstruktur."
+
+#: apps/showcase/templates/showcase/jastipin.html:276
+msgid "Flight Details"
+msgstr "Detail Penerbangan"
+
+#: apps/showcase/templates/showcase/jastipin.html:279
+msgid "Baggage Info"
+msgstr "Info Bagasi"
+
+#: apps/showcase/templates/showcase/jastipin.html:282
+msgid "Easy Updates"
+msgstr "Pembaruan Mudah"
+
+#: apps/showcase/templates/showcase/jastipin.html:297
+msgid "Analytics Dashboard"
+msgstr "Dasbor Analitik"
+
+#: apps/showcase/templates/showcase/jastipin.html:300
+msgid ""
+"Providers get detailed analytics including WhatsApp click-through rates per "
+"flight, helping them track performance and optimize their services."
+msgstr ""
+"Penyedia mendapatkan analitik terperinci termasuk rasio klik-tayang WhatsApp "
+"per penerbangan, yang membantu mereka melacak performa dan mengoptimalkan "
+"layanan."
+
+#: apps/showcase/templates/showcase/jastipin.html:304
+msgid "Click Tracking"
+msgstr "Pelacakan Klik"
+
+#: apps/showcase/templates/showcase/jastipin.html:307
+msgid "Per-Flight Stats"
+msgstr "Statistik Per Penerbangan"
+
+#: apps/showcase/templates/showcase/jastipin.html:310
+msgid "Engagement Metrics"
+msgstr "Metrik Keterlibatan"
+
+#: apps/showcase/templates/showcase/jastipin.html:328
+msgid ""
+"Direct WhatsApp connection buttons allow customers to instantly contact "
+"providers, with all interactions tracked for provider insights."
+msgstr ""
+"Tombol koneksi WhatsApp langsung memungkinkan pelanggan menghubungi penyedia "
+"secara instan, dengan semua interaksi dilacak untuk wawasan penyedia."
+
+#: apps/showcase/templates/showcase/jastipin.html:332
+msgid "Direct Contact"
+msgstr "Kontak Langsung"
+
+#: apps/showcase/templates/showcase/jastipin.html:338
+msgid "Fast Response"
+msgstr "Respons Cepat"
+
+#: apps/showcase/templates/showcase/jastipin.html:364
+msgid "Smart Baggage Search"
+msgstr "Pencarian Bagasi Cerdas"
+
+#: apps/showcase/templates/showcase/jastipin.html:369
+msgid ""
+"Customers can search for available baggage capacity by selecting specific "
+"travel dates, filtering results to show only relevant jastip providers."
+msgstr ""
+"Pelanggan dapat mencari kapasitas bagasi yang tersedia dengan memilih "
+"tanggal perjalanan tertentu, menyaring hasil untuk hanya menampilkan "
+"penyedia jastip yang relevan."
+
+#: apps/showcase/templates/showcase/jastipin.html:376
+msgid "Date-based filtering system"
+msgstr "Sistem penyaringan berbasis tanggal"
+
+#: apps/showcase/templates/showcase/jastipin.html:382
+msgid "Real-time availability display"
+msgstr "Tampilan ketersediaan waktu nyata"
+
+#: apps/showcase/templates/showcase/jastipin.html:388
+msgid "Provider profile information"
+msgstr "Informasi profil penyedia"
+
+#: apps/showcase/templates/showcase/jastipin.html:394
+msgid "Baggage capacity indicators"
+msgstr "Indikator kapasitas bagasi"
+
+#: apps/showcase/templates/showcase/jastipin.html:438
+msgid "Provider Dashboard"
+msgstr "Dasbor Penyedia"
+
+#: apps/showcase/templates/showcase/jastipin.html:443
+msgid ""
+"Comprehensive dashboard for jastip providers to manage flight registrations, "
+"track analytics, and monitor customer engagement."
+msgstr ""
+"Dasbor komprehensif bagi penyedia jastip untuk mengelola pendaftaran "
+"penerbangan, melacak analitik, dan memantau keterlibatan pelanggan."
+
+#: apps/showcase/templates/showcase/jastipin.html:450
+msgid "Flight details management"
+msgstr "Manajemen detail penerbangan"
+
+#: apps/showcase/templates/showcase/jastipin.html:456
+msgid "WhatsApp click tracking"
+msgstr "Pelacakan klik WhatsApp"
+
+#: apps/showcase/templates/showcase/jastipin.html:462
+msgid "Per-flight analytics report"
+msgstr "Laporan analitik per penerbangan"
+
+#: apps/showcase/templates/showcase/jastipin.html:469
+msgid "Engagement metrics visualization"
+msgstr "Visualisasi metrik keterlibatan"
+
+#: apps/showcase/templates/showcase/jastipin.html:486
+msgid "Instant Connection"
+msgstr "Koneksi Instan"
+
+#: apps/showcase/templates/showcase/jastipin.html:491
+msgid ""
+"One-click WhatsApp integration enables immediate communication between "
+"customers and providers, streamlining the booking process."
+msgstr ""
+"Integrasi WhatsApp satu klik memungkinkan komunikasi segera antara pelanggan "
+"dan penyedia, menyederhanakan proses pemesanan."
+
+#: apps/showcase/templates/showcase/jastipin.html:498
+msgid "Direct WhatsApp contact button"
+msgstr "Tombol kontak WhatsApp langsung"
+
+#: apps/showcase/templates/showcase/jastipin.html:504
+msgid "Pre-filled message templates"
+msgstr "Templat pesan terisi otomatis"
+
+#: apps/showcase/templates/showcase/jastipin.html:510
+msgid "Click tracking for providers"
+msgstr "Pelacakan klik untuk penyedia"
+
+#: apps/showcase/templates/showcase/jastipin.html:516
+msgid "Mobile-optimized experience"
+msgstr "Pengalaman yang dioptimalkan untuk seluler"
 
 #: apps/showcase/templates/showcase/saudahtravel.html:29
 #, fuzzy
@@ -350,9 +609,9 @@ msgid ""
 "system that empowers the admin team to manage travel packages efficiently."
 msgstr ""
 "Saudah Travel adalah platform web komprehensif yang dirancang untuk agen "
-"perjalanan dengan spesialisasi layanan ibadah (Haji dan Umrah) serta "
-"paket wisata umum. Platform ini menyediakan sistem manajemen konten dinamis "
-"yang memberdayakan tim admin untuk mengelola paket perjalanan secara efisien."
+"perjalanan dengan spesialisasi layanan ibadah (Haji dan Umrah) serta paket "
+"wisata umum. Platform ini menyediakan sistem manajemen konten dinamis yang "
+"memberdayakan tim admin untuk mengelola paket perjalanan secara efisien."
 
 #: apps/showcase/templates/showcase/saudahtravel.html:165
 msgid ""
@@ -363,9 +622,9 @@ msgid ""
 msgstr ""
 "Dibangun dengan teknologi web modern, platform ini menampilkan desain yang "
 "sepenuhnya responsif dan dasbor admin yang intuitif. Administrator dapat "
-"membuat, menyunting, dan menghapus paket perjalanan secara waktu nyata "
-"tanpa memerlukan keahlian teknis, sehingga pengelolaan konten menjadi "
-"mulus dan efisien."
+"membuat, menyunting, dan menghapus paket perjalanan secara waktu nyata tanpa "
+"memerlukan keahlian teknis, sehingga pengelolaan konten menjadi mulus dan "
+"efisien."
 
 #: apps/showcase/templates/showcase/saudahtravel.html:172
 msgid ""
@@ -452,9 +711,9 @@ msgid ""
 "using Alpine.js, making the browsing experience more engaging without heavy "
 "JavaScript frameworks."
 msgstr ""
-"Meningkatkan pengalaman pengguna dengan animasi halus dan komponen interaktif "
-"menggunakan Alpine.js, menjadikan pengalaman penelusuran lebih menarik tanpa "
-"kerangka kerja JavaScript yang berat."
+"Meningkatkan pengalaman pengguna dengan animasi halus dan komponen "
+"interaktif menggunakan Alpine.js, menjadikan pengalaman penelusuran lebih "
+"menarik tanpa kerangka kerja JavaScript yang berat."
 
 #: apps/showcase/templates/showcase/saudahtravel.html:307
 msgid "Smooth Transitions"
@@ -577,7 +836,6 @@ msgstr "Aset statis yang di-cache"
 #: apps/showcase/templates/showcase/saudahtravel.html:523
 msgid "Lazy loading implementation"
 msgstr "Penerapan lazy loading"
-
 
 #: config/settings/base.py:71
 msgid "English"

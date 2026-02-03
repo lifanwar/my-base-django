@@ -1,5 +1,8 @@
-{% extends 'showcase/base.html' %} {% block title %}Jastipin E-commerce |
-Mualiful Anwar{% endblock %} {% block content %}
+{% extends 'showcase/base.html' %} 
+{% load i18n %}
+{% block title %}Jastipin E-commerce | Mualiful Anwar{% endblock %} 
+
+{% block content %}
 <!-- Hero Section -->
 <section
   class="relative bg-gradient-to-b from-[#fefce8] to-yellow-100 py-16 md:py-20"
@@ -22,8 +25,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 
     <!-- Project Subtitle -->
     <p class="text-2xl md:text-3xl text-gray-800 mb-8 max-w-3xl">
-      Jastip Marketplace Platform Connecting Travelers & Customers in Egypt and
-      Indonesia
+      {% trans "Jastip Marketplace Platform Connecting Travelers & Customers in Egypt and Indonesia" %}
     </p>
 
     <!-- Tech Stack Badges -->
@@ -60,7 +62,7 @@ Mualiful Anwar{% endblock %} {% block content %}
         href="#overview"
         class="inline-block bg-white text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-yellow-100 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        📖 Read Case Study
+        📖 {% trans "Read Case Study" %}
       </a>
     </div>
   </div>
@@ -152,33 +154,22 @@ Mualiful Anwar{% endblock %} {% block content %}
 
       <!-- Right Column - Description -->
       <div class="md:col-span-2">
-        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">Overview</h2>
+        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">{% trans "Overview" %}</h2>
 
         <div class="space-y-6 text-lg leading-relaxed">
           <p class="text-gray-700">
-            Jastipin.id is a specialized marketplace platform designed to
-            connect jastip providers (travelers who offer baggage delivery
-            services) with customers in Egypt, particularly serving the
-            Indonesian community. The platform addresses the common challenge of
-            finding reliable jastip services in a fragmented, unorganized
-            market.
+            {% trans "Jastipin.id is a specialized marketplace platform designed to connect jastip providers (travelers who offer baggage delivery services) with customers in Egypt, particularly serving the Indonesian community. The platform addresses the common challenge of finding reliable jastip services in a fragmented, unorganized market." %}
           </p>
 
           <p class="text-gray-700">
-            The platform features a date-based baggage search system where
-            customers can find available jastip providers based on their
-            specific travel dates. Jastip providers can register their flight
-            details and track engagement through an analytics dashboard,
-            including WhatsApp click-through rates per flight.
+            {% trans "The platform features a date-based baggage search system where customers can find available jastip providers based on their specific travel dates. Jastip providers can register their flight details and track engagement through an analytics dashboard, including WhatsApp click-through rates per flight." %}
           </p>
 
           <div
             class="border-l-4 border-green-500 pl-6 py-2 bg-green-50 border-4 border-gray-900 p-6 my-8"
           >
             <p class="font-bold text-xl text-gray-900 italic">
-              "Connecting travelers and customers efficiently by organizing
-              scattered jastip services into one centralized, date-based
-              marketplace."
+              {% trans "Connecting travelers and customers efficiently by organizing scattered jastip services into one centralized, date-based marketplace." %}
             </p>
           </div>
         </div>
@@ -191,7 +182,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-white py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12 text-center">
-      The Challenge
+      {% trans "The Challenge" %}
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -205,12 +196,10 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">🔍</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Fragmented Market</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Fragmented Market" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Jastip services were scattered across social media posts and group
-          chats, making it extremely difficult for customers to find reliable
-          providers when needed.
+          {% trans "Jastip services were scattered across social media posts and group chats, making it extremely difficult for customers to find reliable providers when needed." %}
         </p>
       </div>
 
@@ -224,12 +213,10 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">📅</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Date Mismatch</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Date Mismatch" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Customers often found jastip advertisements that didn't match their
-          urgent timeline, wasting time searching through outdated or irrelevant
-          posts.
+          {% trans "Customers often found jastip advertisements that didn't match their urgent timeline, wasting time searching through outdated or irrelevant posts." %}
         </p>
       </div>
     </div>
@@ -240,7 +227,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-yellow-100 py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
-      The Solution
+     {% trans "The Solution" %}
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8">
@@ -254,21 +241,20 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">🗓️</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Date-Based Search</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Date-Based Search" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Customers can filter available jastip services by specific travel
-          dates, instantly finding providers whose schedules match their needs.
+          {% trans "Customers can filter available jastip services by specific travel dates, instantly finding providers whose schedules match their needs." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Calendar Filter</span
+            >{% trans "Calendar Filter" %}</span
           >
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Real-time Availability</span
+            >{% trans "Real-time Availability" %}</span
           >
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Smart Matching</span
+            >{% trans "Smart Matching" %}</span
           >
         </div>
       </div>
@@ -283,22 +269,20 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">✈️</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Flight Registration</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Flight Registration" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Jastip providers can register their flight details including departure
-          dates, destinations, and available baggage capacity in a structured
-          format.
+          {% trans "Jastip providers can register their flight details including departure dates, destinations, and available baggage capacity in a structured format." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
-            >Flight Details</span
+            >{% trans "Flight Details" %}</span
           >
           <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
-            >Baggage Info</span
+            >{% trans "Baggage Info" %}</span
           >
           <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
-            >Easy Updates</span
+            >{% trans "Easy Updates" %}</span
           >
         </div>
       </div>
@@ -313,22 +297,20 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">📊</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Analytics Dashboard</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Analytics Dashboard" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Providers get detailed analytics including WhatsApp click-through
-          rates per flight, helping them track performance and optimize their
-          services.
+          {% trans "Providers get detailed analytics including WhatsApp click-through rates per flight, helping them track performance and optimize their services." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Click Tracking</span
+            >{% trans "Click Tracking" %}</span
           >
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Per-Flight Stats</span
+            >{% trans "Per-Flight Stats" %}</span
           >
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Engagement Metrics</span
+            >{% trans "Engagement Metrics" %}</span
           >
         </div>
       </div>
@@ -346,19 +328,17 @@ Mualiful Anwar{% endblock %} {% block content %}
           <h3 class="text-xl font-black uppercase">WhatsApp Integration</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Direct WhatsApp connection buttons allow customers to instantly
-          contact providers, with all interactions tracked for provider
-          insights.
+         {% trans "Direct WhatsApp connection buttons allow customers to instantly contact providers, with all interactions tracked for provider insights." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
-            >Direct Contact</span
+            >{% trans "Direct Contact" %}</span
           >
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
             >Click Tracking</span
           >
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
-            >Fast Response</span
+            >{% trans "Fast Response" %}</span
           >
         </div>
       </div>
@@ -370,7 +350,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-white py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
-      Key Features
+      {% trans "Key Features" %}
     </h2>
 
     <div class="space-y-12">
@@ -384,39 +364,37 @@ Mualiful Anwar{% endblock %} {% block content %}
               01
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              Smart Baggage Search
+              {% trans "Smart Baggage Search" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-green-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            Customers can search for available baggage capacity by selecting
-            specific travel dates, filtering results to show only relevant
-            jastip providers.
+            {% trans "Customers can search for available baggage capacity by selecting specific travel dates, filtering results to show only relevant jastip providers." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-green-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Date-based filtering system</span>
+              <span class="text-gray-700">{% trans "Date-based filtering system" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-blue-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Real-time availability display</span>
+              <span class="text-gray-700">{% trans "Real-time availability display" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-purple-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Provider profile information</span>
+              <span class="text-gray-700">{% trans "Provider profile information" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-orange-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Baggage capacity indicators</span>
+              <span class="text-gray-700">{% trans "Baggage capacity indicators" %}</span>
             </li>
           </ul>
         </div>
@@ -460,39 +438,38 @@ Mualiful Anwar{% endblock %} {% block content %}
               02
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              Provider Dashboard
+              {% trans "Provider Dashboard" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-blue-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            Comprehensive dashboard for jastip providers to manage flight
-            registrations, track analytics, and monitor customer engagement.
+            {% trans "Comprehensive dashboard for jastip providers to manage flight registrations, track analytics, and monitor customer engagement." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-cyan-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Flight details management</span>
+              <span class="text-gray-700">{% trans "Flight details management" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-pink-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">WhatsApp click tracking</span>
+              <span class="text-gray-700">{% trans "WhatsApp click tracking" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-yellow-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Per-flight analytics report</span>
+              <span class="text-gray-700">{% trans "Per-flight analytics report" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-indigo-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
               <span class="text-gray-700"
-                >Engagement metrics visualization</span
+                >{% trans "Engagement metrics visualization" %}</span
               >
             </li>
           </ul>
@@ -509,38 +486,37 @@ Mualiful Anwar{% endblock %} {% block content %}
               03
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              Instant Connection
+              {% trans "Instant Connection" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-purple-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            One-click WhatsApp integration enables immediate communication
-            between customers and providers, streamlining the booking process.
+            {% trans "One-click WhatsApp integration enables immediate communication between customers and providers, streamlining the booking process." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-red-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Direct WhatsApp contact button</span>
+              <span class="text-gray-700">{% trans "Direct WhatsApp contact button" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-teal-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Pre-filled message templates</span>
+              <span class="text-gray-700">{% trans "Pre-filled message templates" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-lime-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Click tracking for providers</span>
+              <span class="text-gray-700">{% trans "Click tracking for providers" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-amber-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Mobile-optimized experience</span>
+              <span class="text-gray-700">{% trans "Mobile-optimized experience" %}</span>
             </li>
           </ul>
         </div>
@@ -690,23 +666,23 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-gray-900 text-white py-16 md:py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">
-      Interested in working together?
+      {% trans "Interested in working together?" %}
     </h2>
     <p class="text-xl mb-8 text-gray-300">
-      Let's keep in touch and discuss your next project
+     {% trans "Let's keep in touch and discuss your next project" %}
     </p>
     <div class="flex flex-wrap gap-4 justify-center">
       <a
-        href="index.html#contact"
+        href="{% url "home" %}#contact"
         class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        💬 Get in Touch
+        💬 {% trans "Get in Touch" %}
       </a>
       <a
-        href="index.html#projects"
+        href="{% url "home" %}#projects"
         class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        ← More Projects
+        ← {% trans "More Projects" %}
       </a>
     </div>
   </div>
