@@ -1,5 +1,8 @@
-{% extends 'showcase/base.html' %} {% block title %}Saudahtravel Agency |
-Mualiful Anwar{% endblock %} {% block content %}
+{% extends 'showcase/base.html' %} 
+{% load i18n %}
+{% block title %}Saudahtravel Agency | Mualiful Anwar{% endblock %} 
+
+{% block content %}
 
 <!-- Hero Section -->
 <section
@@ -23,7 +26,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 
     <!-- Project Subtitle -->
     <p class="text-2xl md:text-3xl text-gray-800 mb-8 max-w-3xl">
-      Dynamic Travel Agency Platform for Hajj, Umrah & Tour Packages
+      {% trans "Dynamic Travel Agency Platform for Hajj, Umrah & Tour Packages" %}
     </p>
 
     <!-- Tech Stack Badges -->
@@ -53,13 +56,13 @@ Mualiful Anwar{% endblock %} {% block content %}
         target="_blank"
         class="inline-block bg-blue-500 text-white px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-gray-900 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        🌐 Visit Live Site
+        🌐 {% trans "Visit Live Site" %}
       </a>
       <a
         href="#overview"
         class="inline-block bg-white text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-gray-900 hover:bg-yellow-100 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        📖 Read Case Study
+        📖 {% trans "Read Case Study" %}
       </a>
     </div>
   </div>
@@ -151,31 +154,22 @@ Mualiful Anwar{% endblock %} {% block content %}
 
       <!-- Right Column - Description -->
       <div class="md:col-span-2">
-        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">Overview</h2>
+        <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">{% trans "Overview" %}</h2>
 
         <div class="space-y-6 text-lg leading-relaxed">
           <p class="text-gray-700">
-            Saudah Travel is a comprehensive web platform designed for a travel
-            agency specializing in Islamic pilgrimage services (Hajj and Umrah)
-            as well as general tour packages. The platform provides a dynamic
-            content management system that empowers the admin team to manage
-            travel packages efficiently.
+            {% trans "Saudah Travel is a comprehensive web platform designed for a travel agency specializing in Islamic pilgrimage services (Hajj and Umrah) as well as general tour packages. The platform provides a dynamic content management system that empowers the admin team to manage travel packages efficiently." %}
           </p>
 
           <p class="text-gray-700">
-            Built with modern web technologies, the platform features a fully
-            responsive design and an intuitive admin dashboard. Administrators
-            can create, edit, and delete travel packages in real-time without
-            requiring technical expertise, making content management seamless
-            and efficient.
+            {% trans "Built with modern web technologies, the platform features a fully responsive design and an intuitive admin dashboard. Administrators can create, edit, and delete travel packages in real-time without requiring technical expertise, making content management seamless and efficient." %}
           </p>
 
           <div
             class="border-l-4 border-blue-500 pl-6 py-2 bg-blue-50 border-4 border-gray-900 p-6 my-8"
           >
             <p class="font-bold text-xl text-gray-900 italic">
-              "The goal was to create a platform that is both powerful for
-              admins and intuitive for customers browsing travel packages."
+              {% trans '"The goal was to create a platform that is both powerful for admins and intuitive for customers browsing travel packages."' %}
             </p>
           </div>
         </div>
@@ -188,7 +182,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-white py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12 text-center">
-      The Challenge
+      {% trans "The Challenge" %}
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -202,11 +196,10 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">❌</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Static Content</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Static Content" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Previous website required developer intervention for every content
-          update, causing delays and increasing maintenance costs.
+          {% trans "Previous website required developer intervention for every content update, causing delays and increasing maintenance costs." %}
         </p>
       </div>
 
@@ -220,11 +213,10 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">⏱️</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Slow Updates</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Slow Updates" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Travel packages needed frequent price and availability updates, but
-          the manual process was time-consuming and error-prone.
+          {% trans "Travel packages needed frequent price and availability updates, but the manual process was time-consuming and error-prone." %}
         </p>
       </div>
     </div>
@@ -235,7 +227,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-yellow-100 py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
-      The Solution
+      {% trans "The Solution" %}
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8">
@@ -249,12 +241,10 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">⚡</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Dynamic CMS</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Dynamic CMS" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Built a comprehensive admin dashboard where non-technical staff can
-          manage all travel packages, including creating, editing, deleting, and
-          publishing content instantly.
+          {% trans "Built a comprehensive admin dashboard where non-technical staff can manage all travel packages, including creating, editing, deleting, and publishing content instantly." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-blue-100 px-2 py-1 font-mono"
@@ -279,22 +269,20 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">📱</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Mobile-First Design</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Mobile-First Design" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Implemented fully responsive design using Tailwind CSS, ensuring
-          perfect user experience across all devices from mobile phones to
-          desktop screens.
+          {% trans "Implemented fully responsive design using Tailwind CSS, ensuring perfect user experience across all devices from mobile phones to desktop screens." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Responsive Grid</span
+            >{% trans "Responsive Grid" %}</span
           >
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Touch Optimized</span
+            >{% trans "Touch Optimized" %}</span
           >
           <span class="text-xs bg-green-100 px-2 py-1 font-mono"
-            >Fast Loading</span
+            >{% trans "Fast Loading" %}</span
           >
         </div>
       </div>
@@ -309,22 +297,20 @@ Mualiful Anwar{% endblock %} {% block content %}
           >
             <span class="text-2xl">✨</span>
           </div>
-          <h3 class="text-xl font-black uppercase">Interactive UI</h3>
+          <h3 class="text-xl font-black uppercase">{% trans "Interactive UI" %}</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Enhanced user experience with smooth animations and interactive
-          components using Alpine.js, making the browsing experience more
-          engaging without heavy JavaScript frameworks.
+          {% trans "Enhanced user experience with smooth animations and interactive components using Alpine.js, making the browsing experience more engaging without heavy JavaScript frameworks." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Smooth Transitions</span
+            >{% trans "Smooth Transitions" %}</span
           >
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Dropdown Menus</span
+            >{% trans "Dropdown Menus" %}</span
           >
           <span class="text-xs bg-purple-100 px-2 py-1 font-mono"
-            >Modal Windows</span
+            >{% trans "Modal Windows" %}</span
           >
         </div>
       </div>
@@ -342,19 +328,17 @@ Mualiful Anwar{% endblock %} {% block content %}
           <h3 class="text-xl font-black uppercase">Modern UI/UX</h3>
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Designed clean, professional interface that builds trust with
-          potential customers while maintaining easy navigation and clear
-          call-to-actions.
+          {% trans "Designed clean, professional interface that builds trust with potential customers while maintaining easy navigation and clear call-to-actions." %}
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
-            >Clean Layout</span
+            >{% trans "Clean Layout" %}</span
           >
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
-            >Clear CTAs</span
+            >{% trans "Clear CTAs" %}</span
           >
           <span class="text-xs bg-orange-100 px-2 py-1 font-mono"
-            >Trust Signals</span
+            >{% trans "Trust Signals" %}</span
           >
         </div>
       </div>
@@ -366,7 +350,7 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-white py-16 md:py-20">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-12">
-      Key Features
+      {% trans "Key Features" %}
     </h2>
 
     <div class="space-y-12">
@@ -380,13 +364,12 @@ Mualiful Anwar{% endblock %} {% block content %}
               01
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              Package Management
+              {% trans "Package Management" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-blue-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            Comprehensive CRUD operations for travel packages with rich text
-            editing, image galleries, pricing tiers, and availability tracking.
+            {% trans "Comprehensive CRUD operations for travel packages with rich text editing, image galleries, pricing tiers, and availability tracking." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
@@ -394,7 +377,7 @@ Mualiful Anwar{% endblock %} {% block content %}
                 class="inline-block w-5 h-5 bg-blue-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
               <span class="text-gray-700"
-                >Create unlimited package variations</span
+                >{% trans "Create unlimited package variations" %}</span
               >
             </li>
             <li class="flex items-start gap-2">
@@ -402,20 +385,20 @@ Mualiful Anwar{% endblock %} {% block content %}
                 class="inline-block w-5 h-5 bg-green-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
               <span class="text-gray-700"
-                >Upload multiple images per package</span
+                >{% trans "Upload multiple images per package" %}</span
               >
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-purple-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Set different pricing options</span>
+              <span class="text-gray-700">{% trans "Set different pricing options" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-orange-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Manage availability and dates</span>
+              <span class="text-gray-700">{% trans "Manage availability and dates" %}</span>
             </li>
           </ul>
         </div>
@@ -459,39 +442,38 @@ Mualiful Anwar{% endblock %} {% block content %}
               02
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              User-Friendly Interface
+              {% trans "User-Friendly Interface" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-green-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            Intuitive navigation and clean design help customers easily find and
-            compare travel packages, with clear pricing and booking information.
+            {% trans "Intuitive navigation and clean design help customers easily find and compare travel packages, with clear pricing and booking information." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-cyan-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Category filtering system</span>
+              <span class="text-gray-700">{% trans "Category filtering system" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-pink-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Search functionality</span>
+              <span class="text-gray-700">{% trans "Search functionality" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-yellow-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Package comparison feature</span>
+              <span class="text-gray-700">{% trans "Package comparison feature" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-indigo-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
               <span class="text-gray-700"
-                >WhatsApp integration for inquiries</span
+                >{% trans "WhatsApp integration for inquiries" %}</span
               >
             </li>
           </ul>
@@ -508,38 +490,37 @@ Mualiful Anwar{% endblock %} {% block content %}
               03
             </div>
             <h3 class="text-2xl md:text-3xl font-black uppercase">
-              Performance Optimized
+              {% trans "Performance Optimized" %}
             </h3>
           </div>
           <div class="h-1 w-32 bg-purple-500 mb-6"></div>
           <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            Built with performance in mind, ensuring fast page loads even with
-            rich media content and multiple package listings.
+            {% trans "Built with performance in mind, ensuring fast page loads even with rich media content and multiple package listings." %}
           </p>
           <ul class="space-y-2">
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-red-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Optimized image loading</span>
+              <span class="text-gray-700">{% trans "Optimized image loading" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-teal-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Efficient database queries</span>
+              <span class="text-gray-700">{% trans "Efficient database queries" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-lime-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Cached static assets</span>
+              <span class="text-gray-700">{% trans "Cached static assets" %}</span>
             </li>
             <li class="flex items-start gap-2">
               <span
                 class="inline-block w-5 h-5 bg-amber-500 rounded-sm flex-shrink-0 mt-1"
               ></span>
-              <span class="text-gray-700">Lazy loading implementation</span>
+              <span class="text-gray-700">{% trans "Lazy loading implementation" %}</span>
             </li>
           </ul>
         </div>
@@ -685,10 +666,10 @@ Mualiful Anwar{% endblock %} {% block content %}
 <section class="bg-gray-900 text-white py-16 md:py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">
-      Interested in working together?
+      {% trans "Interested in working together?" %}
     </h2>
     <p class="text-xl mb-8 text-gray-300">
-      Let's keep in touch and discuss your next project
+      {% trans "Let's keep in touch and discuss your next project" %}
     </p>
     <div class="flex flex-wrap gap-4 justify-center">
       <a
@@ -696,19 +677,19 @@ Mualiful Anwar{% endblock %} {% block content %}
         target="_blank"
         class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-white transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        🌐 Visit Live Site
+        🌐 {% trans "Visit Live Site" %}
       </a>
       <a
         href="{% url "home" %}#contact"
         class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        💬 Get in Touch
+        💬 {% trans "Get in Touch" %}
       </a>
       <a
         href="{% url "home" %}#projects"
         class="inline-block bg-gray-900 text-white px-8 py-4 font-black uppercase text-base border-4 border-white hover:bg-gray-800 transition-all shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
       >
-        ← More Projects
+        ← {% trans "More Projects" %}
       </a>
     </div>
   </div>
