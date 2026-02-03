@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 12:14+0200\n"
+"POT-Creation-Date: 2026-02-03 12:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps/showcase/templates/showcase/dkkm.html:29
+#: apps/showcase/templates/showcase/dkkm.html:33
 msgid ""
 "Automated Blacklist Alert System & Admin Dashboard for Indonesian Students "
 "in Egypt"
@@ -26,29 +26,30 @@ msgstr ""
 "Sistem Peringatan Blacklist Otomatis dan Dashboard Admin untuk Mahasiswa "
 "Indonesia di Mesir"
 
-#: apps/showcase/templates/showcase/dkkm.html:66
+#: apps/showcase/templates/showcase/dkkm.html:70
 #, fuzzy
 #| msgid "View Case Study"
 msgid "Read Case Study"
 msgstr "Baca Studi Kasus"
 
-#: apps/showcase/templates/showcase/dkkm.html:72
+#: apps/showcase/templates/showcase/dkkm.html:76
+#: apps/showcase/templates/showcase/dkkm.html:712
 #, fuzzy
 #| msgid "Get in touch"
 msgid "Get in Touch"
 msgstr "Hubungi Saya"
 
-#: apps/showcase/templates/showcase/dkkm.html:116
+#: apps/showcase/templates/showcase/dkkm.html:120
 #, fuzzy
 #| msgid "Projects"
 msgid "Project Info"
 msgstr "Info Proyek"
 
-#: apps/showcase/templates/showcase/dkkm.html:167
+#: apps/showcase/templates/showcase/dkkm.html:171
 msgid "Overview"
 msgstr "Gambaran Umum"
 
-#: apps/showcase/templates/showcase/dkkm.html:172
+#: apps/showcase/templates/showcase/dkkm.html:176
 msgid ""
 "DKM Real Estate Platform is a comprehensive automation solution designed to "
 "help Indonesian students in Egypt identify blacklisted properties quickly "
@@ -61,7 +62,7 @@ msgstr ""
 "Telegram untuk memberikan peringatan properti secara instan dan dashboard "
 "admin untuk pengelolaan data terpusat."
 
-#: apps/showcase/templates/showcase/dkkm.html:176
+#: apps/showcase/templates/showcase/dkkm.html:180
 msgid ""
 "Previously, blacklist information was scattered across WhatsApp channels and "
 "Instagram story highlights, making it difficult for students to access "
@@ -78,7 +79,7 @@ msgstr ""
 "pencarian berbasis lokasi melalui bot Telegram, serta dashboard Django Admin "
 "lengkap dengan integrasi peta Leaflet."
 
-#: apps/showcase/templates/showcase/dkkm.html:183
+#: apps/showcase/templates/showcase/dkkm.html:187
 msgid ""
 "Transforming fragmented housing warnings into an automated, location-based "
 "alert system with centralized management."
@@ -86,15 +87,15 @@ msgstr ""
 "Mengubah peringatan hunian yang terpencar menjadi sistem peringatan otomatis "
 "berbasis lokasi dengan pengelolaan terpusat."
 
-#: apps/showcase/templates/showcase/dkkm.html:196
+#: apps/showcase/templates/showcase/dkkm.html:200
 msgid "The Challenge"
 msgstr "Tantangan"
 
-#: apps/showcase/templates/showcase/dkkm.html:210
+#: apps/showcase/templates/showcase/dkkm.html:214
 msgid "Fragmented Data"
 msgstr "Data Terpencar"
 
-#: apps/showcase/templates/showcase/dkkm.html:213
+#: apps/showcase/templates/showcase/dkkm.html:217
 msgid ""
 "Property blacklist information was scattered across WhatsApp channels and "
 "Instagram story highlights, requiring students to manually check multiple "
@@ -104,11 +105,11 @@ msgstr ""
 "cerita Instagram, sehingga mahasiswa harus memeriksa banyak sumber secara "
 "manual dan rutin untuk tetap mendapatkan informasi terkini."
 
-#: apps/showcase/templates/showcase/dkkm.html:227
+#: apps/showcase/templates/showcase/dkkm.html:231
 msgid "Outdated Records"
 msgstr "Data Kedaluwarsa"
 
-#: apps/showcase/templates/showcase/dkkm.html:230
+#: apps/showcase/templates/showcase/dkkm.html:234
 msgid ""
 "Properties cleared from blacklist remained in old posts, while newly "
 "problematic units weren't quickly documented, causing confusion and "
@@ -119,11 +120,11 @@ msgstr ""
 "terdokumentasi. Hal ini menimbulkan kebingungan dan misinformasi di kalangan "
 "mahasiswa."
 
-#: apps/showcase/templates/showcase/dkkm.html:241
+#: apps/showcase/templates/showcase/dkkm.html:245
 msgid "The Solution"
 msgstr "Solusi"
 
-#: apps/showcase/templates/showcase/dkkm.html:258
+#: apps/showcase/templates/showcase/dkkm.html:262
 msgid ""
 "Students can share their location via Telegram to instantly receive "
 "information about nearby blacklisted properties, complete with building "
@@ -134,25 +135,25 @@ msgstr ""
 "dilengkapi detail gedung, nomor unit, informasi pemilik, dan alasan "
 "pencantuman blacklist."
 
-#: apps/showcase/templates/showcase/dkkm.html:262
+#: apps/showcase/templates/showcase/dkkm.html:266
 #, fuzzy
 #| msgid "Location"
 msgid "Location Sharing"
 msgstr "Berbagi Lokasi"
 
-#: apps/showcase/templates/showcase/dkkm.html:265
+#: apps/showcase/templates/showcase/dkkm.html:269
 msgid "Instant Alerts"
 msgstr "Peringatan Instan"
 
-#: apps/showcase/templates/showcase/dkkm.html:268
+#: apps/showcase/templates/showcase/dkkm.html:272
 msgid "Proximity Search"
 msgstr "Pencarian Berdasarkan Kedekatan"
 
-#: apps/showcase/templates/showcase/dkkm.html:284
+#: apps/showcase/templates/showcase/dkkm.html:288
 msgid "Leaflet-Integrated Dashboard"
 msgstr "Dashboard Terintegrasi dengan Leaflet"
 
-#: apps/showcase/templates/showcase/dkkm.html:288
+#: apps/showcase/templates/showcase/dkkm.html:292
 msgid ""
 "Django Admin dashboard with Leaflet.js map integration allows DKKM staff to "
 "create, edit, and manage buildings and units with precise location mapping "
@@ -163,17 +164,17 @@ msgstr ""
 "lokasi yang presisi menggunakan OpenStreetMap untuk pencarian jarak yang "
 "lebih akurat."
 
-#: apps/showcase/templates/showcase/dkkm.html:298
+#: apps/showcase/templates/showcase/dkkm.html:302
 #, fuzzy
 #| msgid "Location"
 msgid "Location Pins"
 msgstr "Penanda Lokasi"
 
-#: apps/showcase/templates/showcase/dkkm.html:313
+#: apps/showcase/templates/showcase/dkkm.html:317
 msgid "Real-Time Sync"
 msgstr "Sinkronisasi Real-Time"
 
-#: apps/showcase/templates/showcase/dkkm.html:316
+#: apps/showcase/templates/showcase/dkkm.html:320
 msgid ""
 "Centralized PostgreSQL database ensures both bot and dashboard access the "
 "same up-to-date information, eliminating discrepancies and outdated "
@@ -183,19 +184,19 @@ msgstr ""
 "informasi yang sama dan selalu terbaru, sehingga menghilangkan "
 "ketidaksesuaian serta data blacklist yang kedaluwarsa."
 
-#: apps/showcase/templates/showcase/dkkm.html:323
+#: apps/showcase/templates/showcase/dkkm.html:327
 msgid "Auto Updates"
 msgstr "Pembaruan Otomatis"
 
-#: apps/showcase/templates/showcase/dkkm.html:326
+#: apps/showcase/templates/showcase/dkkm.html:330
 msgid "Data Consistency"
 msgstr "Konsistensi Data"
 
-#: apps/showcase/templates/showcase/dkkm.html:342
+#: apps/showcase/templates/showcase/dkkm.html:346
 msgid "Comprehensive Management"
 msgstr "Manajemen Menyeluruh"
 
-#: apps/showcase/templates/showcase/dkkm.html:346
+#: apps/showcase/templates/showcase/dkkm.html:350
 msgid ""
 "Admin interface allows complete control over buildings, units, and blacklist "
 "status with detailed forms, search filters, and batch operations for "
@@ -205,19 +206,19 @@ msgstr ""
 "blacklist melalui formulir yang detail, filter pencarian, dan operasi massal "
 "untuk pengelolaan data yang lebih efisien."
 
-#: apps/showcase/templates/showcase/dkkm.html:356
+#: apps/showcase/templates/showcase/dkkm.html:360
 msgid "Batch Updates"
 msgstr "Pembaruan Massal"
 
-#: apps/showcase/templates/showcase/dkkm.html:368
+#: apps/showcase/templates/showcase/dkkm.html:372
 msgid "Key Features"
 msgstr "Fitur Utama"
 
-#: apps/showcase/templates/showcase/dkkm.html:382
+#: apps/showcase/templates/showcase/dkkm.html:386
 msgid "Location-Based Bot Search"
 msgstr "Pencarian Bot Berbasis Lokasi"
 
-#: apps/showcase/templates/showcase/dkkm.html:387
+#: apps/showcase/templates/showcase/dkkm.html:391
 msgid ""
 "Students share their location in Telegram to instantly discover nearby "
 "buildings with blacklisted units, sorted by proximity with complete property "
@@ -227,27 +228,27 @@ msgstr ""
 "gedung di sekitar yang memiliki unit blacklist, diurutkan berdasarkan jarak "
 "dengan detail properti yang lengkap."
 
-#: apps/showcase/templates/showcase/dkkm.html:394
+#: apps/showcase/templates/showcase/dkkm.html:398
 msgid "GPS coordinate detection"
 msgstr "Deteksi koordinat GPS"
 
-#: apps/showcase/templates/showcase/dkkm.html:401
+#: apps/showcase/templates/showcase/dkkm.html:405
 msgid "Radius-based property search"
 msgstr "Pencarian properti berbasis radius"
 
-#: apps/showcase/templates/showcase/dkkm.html:408
+#: apps/showcase/templates/showcase/dkkm.html:412
 msgid "Building and unit details"
 msgstr "Detail gedung dan unit"
 
-#: apps/showcase/templates/showcase/dkkm.html:415
+#: apps/showcase/templates/showcase/dkkm.html:419
 msgid "Owner info and blacklist reasons"
 msgstr "Informasi pemilik dan alasan blacklist"
 
-#: apps/showcase/templates/showcase/dkkm.html:460
+#: apps/showcase/templates/showcase/dkkm.html:464
 msgid "Django Admin with Leaflet Maps"
 msgstr "Django Admin dengan Peta Leaflet"
 
-#: apps/showcase/templates/showcase/dkkm.html:465
+#: apps/showcase/templates/showcase/dkkm.html:469
 msgid ""
 "Comprehensive Django Admin interface with Leaflet.js integration for "
 "managing buildings, units, and blacklist status with precise location "
@@ -257,27 +258,27 @@ msgstr ""
 "mengelola gedung, unit, dan status blacklist dengan pemetaan lokasi yang "
 "presisi serta pengelolaan properti secara visual di OpenStreetMap."
 
-#: apps/showcase/templates/showcase/dkkm.html:473
+#: apps/showcase/templates/showcase/dkkm.html:477
 msgid "Interactive Leaflet map interface"
 msgstr "Antarmuka peta Leaflet yang interaktif"
 
-#: apps/showcase/templates/showcase/dkkm.html:481
+#: apps/showcase/templates/showcase/dkkm.html:485
 msgid "Create/edit buildings & units"
 msgstr "Membuat/mengedit gedung dan unit"
 
-#: apps/showcase/templates/showcase/dkkm.html:489
+#: apps/showcase/templates/showcase/dkkm.html:493
 msgid "Pin locations on OpenStreetMap"
 msgstr "Memberi pin lokasi di OpenStreetMap"
 
-#: apps/showcase/templates/showcase/dkkm.html:496
+#: apps/showcase/templates/showcase/dkkm.html:500
 msgid "Manage blacklist status"
 msgstr "Mengelola status blacklist"
 
-#: apps/showcase/templates/showcase/dkkm.html:512
+#: apps/showcase/templates/showcase/dkkm.html:516
 msgid "Real-Time Data Management"
 msgstr "Manajemen Data Real-Time"
 
-#: apps/showcase/templates/showcase/dkkm.html:517
+#: apps/showcase/templates/showcase/dkkm.html:521
 msgid ""
 "Centralized database ensures instant synchronization between bot and "
 "dashboard, with automatic updates when properties are added, modified, or "
@@ -287,22 +288,35 @@ msgstr ""
 "dengan pembaruan otomatis ketika properti ditambahkan, diubah, atau dihapus "
 "dari daftar blacklist."
 
-#: apps/showcase/templates/showcase/dkkm.html:525
+#: apps/showcase/templates/showcase/dkkm.html:529
 msgid "Live database synchronization"
 msgstr "Sinkronisasi basis data secara langsung"
 
-#: apps/showcase/templates/showcase/dkkm.html:532
+#: apps/showcase/templates/showcase/dkkm.html:536
 msgid "Instant bot updates"
 msgstr "Pembaruan bot secara instan"
 
-#: apps/showcase/templates/showcase/dkkm.html:538
+#: apps/showcase/templates/showcase/dkkm.html:542
 msgid "Status change tracking"
 msgstr "Pelacakan perubahan status"
 
-#: apps/showcase/templates/showcase/dkkm.html:544
+#: apps/showcase/templates/showcase/dkkm.html:548
 msgid "Audit log for changes"
 msgstr "Log audit untuk setiap perubahan"
 
+#: apps/showcase/templates/showcase/dkkm.html:702
+msgid "Interested in working together?"
+msgstr "Tertarik untuk bekerja sama?"
+
+#: apps/showcase/templates/showcase/dkkm.html:705
+msgid "Let's keep in touch and discuss your next project"
+msgstr "Mari tetap terhubung dan membahas proyek berikutnya"
+
+#: apps/showcase/templates/showcase/dkkm.html:718
+#, fuzzy
+#| msgid "Projects"
+msgid "More Projects"
+msgstr "Proyek Lainnya"
 
 #: config/settings/base.py:71
 msgid "English"
