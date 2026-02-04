@@ -20,17 +20,17 @@ DATABASES = {
 }
 
 # Security settings
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
-X_FRAME_OPTIONS = 'DENY'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# Redis cache
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': os.environ.get('REDIS_URL'),
-    }
-}
+# CSRF Trusted Origins
+CSRF_TRUSTED_ORIGINS = [
+    f'{protocol}://{domain}'
+    for domain in ALLOWED_HOSTS
+    for protocol in ['https', 'http']
+]
+
