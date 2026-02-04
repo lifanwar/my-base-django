@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @custom-variant hover (&:hover);
+
+@theme {
+  --color-primary: #D0F75B;
+  --color-cream: #f5f1ed;
+  --color-creamautumn: #fefce8;
+  --color-lightgreen: #c8f5c4;
+  
+  --font-family-sans: "Inter", sans-serif;
+}
 /**
   * A catch-all path to Django template files, JavaScript, and Python files
   * that contain Tailwind CSS classes and will be scanned by Tailwind to generate the final CSS file.
