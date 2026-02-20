@@ -11,74 +11,55 @@ Starter setup Django dengan:
 
 ```text
 .
-b┘─ manage.py
-b┘─ apps/
-h�┘─ config/
-    ├� settings/
-      ┘─ __init__.py
-      ├� base.py
-      ├� dev.py
-      ┘─ staging.py
-      ┘─ prod.py
+├── manage.py
+├── apps/
+├── theme/
+├── static/
+└── config/
+    └── settings/
+        ├── __init__.py
+        ├── base.py
+        ├── dev.py
+        ├── staging.py
+        └── prod.py
 ```
 
 ## Switch Environment
 
-`config/settings/__init__.py`
+`Rename env.example to .env`
 
-```py
-import os
-
-env = os.getenv("DJANGO_ENV", "dev")
-
-if env == "prod":
-    from .prod import *
-elif env == "staging":
-    from .staging import *
-else:
-    from .dev import *
-```
-
-## Jadikan `apps/` sebagai root import
-
-`config/settings/base.py`
-
-```py
-import sys
-from pathlib import Path
-
-BAS_DIR = Path(__file__).resolve().parent.parent.parent
-APPS_DIR = BASE_DIR / "apps"
-sys.path.insert(0, str(APPS_DIR))
+```bash
+DJANGO_ENV=prod/dev/staging
 ```
 
 ## Buat App Baru (di `apps/`)
 
 ```bash
-python manage.py startapp blog apps/blog
+python manage.py startapp yournewapps apps/yournewapps
 ```
 
-Daftarkan ke `INSTALLED_APPS` (di `config/settings/base.py`):
+Daftarkan ke `LOCAL_APPS` (di `config/settings/base.py`):
 
 ```py
 INSTALLED_APPS = [
-    "blog",
+    "yournewapps",
 ]
 ```
 
-## Django Tailwind
+## Instalation Django + tailwindcss built in
 
 Install:
 
 ```bash
-pip install django-tailwind
+pip install -r requirements.txt
 ```
 
-Tambahkan ke `INSTALLED_APPS` ma set `TAILWIND_APP_NAME` (di `config/settings/base.py`):
-
+`tailwindcss apps in`
 ```py
-INSTALLED_APPS += ["tailwind"]
-TAILWIND_APP_NAME = "theme"
+THIRD_PARTY_APPS = [
+    "tailwind",
+    "theme",
+]
 ```
 
 Init + install + run Tailwind:
@@ -91,7 +72,7 @@ python manage.py tailwind start
 
 ## Load Tailwind di Template
 
-Di template (mis. `templates/base.html`):
+in templates (ex: `templates/base.html`):
 
 ```django
 {% load tailwind_tags %}
