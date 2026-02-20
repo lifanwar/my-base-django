@@ -1,32 +1,25 @@
-{% load static i18n %}
 {% load tailwind_tags %}
 {% tailwind_css %}
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static "img/ico/apple-touch-icon.png" %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static "img/ico/favicon-32x32.png" %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static "img/ico/favicon-16x16.png" %}">
-    <link rel="manifest" href="{% static "img/ico/site.webmanifest" %}">
 
     <title>
-      {% block title %}Mualiful Anwar | Full Stack Web Developer{% endblock %}
+      {% block title %}Base templates{% endblock %}
     </title>
 
-    <!-- Local Fonts - Load dulu sebelum Tailwind -->
+    <!-- Local Fonts -->
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}" /> 
 
-
-    <!-- Alpine.js CDN -->
+    <!-- Alpine.js -->
     <script defer src="{% static 'js/alpine.min.js' %}"></script>
 
   </head>
 
-  <body class="bg-[#fefce8] text-gray-900 antialiased font-sans">
+  <body class="antialiased font-sans">
     <!-- Header -->
     {% include 'snippets/header.html' %}
 

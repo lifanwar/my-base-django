@@ -1,8 +1,6 @@
 django
-nh3
 psycopg2-binary
 gunicorn
 django-tailwind
 whitenoise
 python-dotenv
-requests
