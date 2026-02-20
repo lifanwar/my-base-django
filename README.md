@@ -41,8 +41,8 @@ python manage.py startapp yournewapps apps/yournewapps
 Daftarkan ke `LOCAL_APPS` (di `config/settings/base.py`):
 
 ```py
-INSTALLED_APPS = [
-    "yournewapps",
+LOCAL_APPS = [
+    "apps.yournewapps"
 ]
 ```
 
